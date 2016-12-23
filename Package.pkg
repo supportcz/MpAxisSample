@@ -2,6 +2,9 @@
 <?AutomationStudio Version=4.2.6.110 SP?>
 <Package xmlns="http://br-automation.co.at/AS/Package">
   <Objects>
-    <Object Type="Program" Language="IEC">MpAxisSample</Object>
+    <Object Type="File">MpAxisSample.typ</Object>
+    <Object Type="File">MpAxisSample.var</Object>
+    <Object Type="Program" Language="IEC">axis01</Object>
+    <Object Type="Program" Language="IEC">usage</Object>
   </Objects>
 </Package>

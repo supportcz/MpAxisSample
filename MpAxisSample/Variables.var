@@ -1,5 +1,0 @@
-VAR
-	stateAxis : stateMpAxis;
-	MpAxisBasic_0 : MpAxisBasic;
-	powerOn : BOOL;
-END_VAR

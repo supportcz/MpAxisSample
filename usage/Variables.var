@@ -1,0 +1,3 @@
+VAR
+	axis01 : REFERENCE TO MpAxisInterfaceType;
+END_VAR
