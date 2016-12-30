@@ -1,0 +1,12 @@
+VAR RETAIN
+	gTableControlSetup : TBLCtrlIntfSetupType; (*Interface control setup variable*)
+	gTableControlRecipe : TBLCtrlIntfRecipeType; (*Interface control recipe variable*)
+END_VAR
+(*Constants*)
+VAR CONSTANT
+	tblCTRL_MEM_INDCT_VALUE : UINT := 16#5555; (*Memory indication value*)
+	tblCTRL_LAST_STATE_NUM : USINT := 10; (*Number of last states buffer*)
+	tblCTRL_LAST_STATE_NUM_INDX : USINT := tblCTRL_LAST_STATE_NUM-1; (*Number of last states buffer index*)
+	tblCTRL_LAST_ERR_STATE_NUM : USINT := 3; (*Number of last error states buffer*)
+	tblCTRL_LAST_ERR_STATE_NUM_INDX : USINT := tblCTRL_LAST_ERR_STATE_NUM-1; (*Number of last error states buffer index*)
+END_VAR

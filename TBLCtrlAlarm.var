@@ -1,0 +1,5 @@
+VAR CONSTANT
+	tblCTRL_ALM_STATION_NOT_IN_POS : STRING[255] := 'TBLCtrlStNotInPos'; (*Stations are not in basic position. [Alarm 33200]*)
+	tblCTRL_ALM_AXIS_PREPARE : STRING[255] := 'TBLCtrlAxisPrepare'; (*Turn table axis prepare error. [Alarm: 33201]*)
+	tblCTRL_ALM_AXIS_MOVE : STRING[255] := 'TBLCtrlAxisMove'; (*Turn table axis move error. [Alarm: 33202]*)
+END_VAR

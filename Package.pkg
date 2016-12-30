@@ -2,9 +2,17 @@
 <?AutomationStudio Version=4.2.6.110 SP?>
 <Package xmlns="http://br-automation.co.at/AS/Package">
   <Objects>
-    <Object Type="File">MpAxisSample.typ</Object>
-    <Object Type="File">MpAxisSample.var</Object>
-    <Object Type="Program" Language="IEC">axis01</Object>
-    <Object Type="Program" Language="IEC">usage</Object>
+    <Object Type="File" Description="Interface Control Error type">TBLCtrlError.typ</Object>
+    <Object Type="File" Description="Interface Control Setup type">TBLCtrlSetup.typ</Object>
+    <Object Type="File" Description="Interface Control Recipe type">TBLCtrlRecipe.typ</Object>
+    <Object Type="File" Description="Interface Control interface data type">TBLCtrlIntf.typ</Object>
+    <Object Type="File" Description="Interface Control interface variables">TBLCtrlIntf.var</Object>
+    <Object Type="File" Description="Interface Control Config variables">TBLCtrlConfig.var</Object>
+    <Object Type="File" Description="Interface Control Alarm variables" Private="true">TBLCtrlAlarm.var</Object>
+    <Object Type="File" Description="Interface Control Alarm Text">TBLCtrlAlarmTexts.tmx</Object>
+    <Object Type="File" Description="Interface Control IO data type" Private="true">TBLCtrlIO.typ</Object>
+    <Object Type="File" Description="Interface Control IO variables" Private="true">TBLCtrlIO.var</Object>
+    <Object Type="Program" Language="ANSIC" Description="Memory lost indication">TableCtrlMem</Object>
+    <Object Type="Program" Language="ANSIC" Description="Control task">TableCtrl</Object>
   </Objects>
 </Package>

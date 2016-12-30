@@ -1,0 +1,25 @@
+VAR
+	TableControl : CtrlType; (*Control variable*)
+	pIntf : REFERENCE TO TBLCtrlInterfaceType; (*Pointer to interface control variable*)
+	pIntfSetup : REFERENCE TO TBLCtrlIntfSetupType; (*Pointer to interface control setup variable*)
+	pIntfRecipe : REFERENCE TO TBLCtrlIntfRecipeType; (*Pointer to interface control recipe variable*)
+	pInst : REFERENCE TO CtrlType; (*Pointer to control variable*)
+	pInstInt : REFERENCE TO CtrlInternalType; (*Pointer to control internal variable*)
+	DummyVar : USINT; (*Dummy var*)
+	test : USINT;
+END_VAR
+(*Constants*)
+VAR CONSTANT
+	statCTRL_STATUS_TIME : REAL := 2.5; (*Status time [s]*)
+	statCTRL_ERR_BLINK_TIME : REAL := 1.0; (*Error blink time [s]*)
+	tblCTRL_POWER_ON_AXIS_TIME_OUT : REAL := 30; (*Power on aixs time out [s]*)
+	tblCTRL_HOME_AXIS_TIME_OUT : REAL := 120; (*Home aixs  time out [s]*)
+	tblCTRL_STATION_DISTANCE : LREAL := 1200; (*Station distance [mm]*)
+	tblCTRL_AXIS_PERIOD : LREAL := 3600; (*Axis period [mm]*)
+	tblCTRL_CLIPS_WIDTH : LREAL := 48; (*Clips width [mm]*)
+	tblCTRL_DIST_NOT_IN_POS : LREAL := 15; (*Distance turn table leave in position [mm]*)
+	tblCTRL_DIST_BEFORE_IN_POS : LREAL := 0; (*Distance turn table before in position [mm]*)
+	tblCTRL_HOME_SENSOR_OFFSET : LREAL := 0.001; (*Home sensor offset [mm]*)
+	tblCTRL_AUTO_VELOCITY : REAL := 500; (*Automat velocity [mm/s]*)
+	tblCTRL_MANUAL_VELOCITY : REAL := 50; (*Manual velocity [mm/s]*)
+END_VAR

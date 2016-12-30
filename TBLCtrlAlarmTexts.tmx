@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tmx version="1.4">
+  <header creationtool="B&amp;R Automation Studio" creationtoolversion="4.2" datatype="unknown" segtype="sentence" adminlang="en" srclang="en" o-tmf="TMX">
+    <note>Change the namespace to define where this text module should be located within the logical structure of your texts</note>
+    <prop type="x-BR-TS:Namespace">User/MachControl/TurnTable/Alarms</prop>
+  </header>
+  <body>
+    <tu tuid="StationNotInPos">
+      <tuv xml:lang="cs">
+        <seg>Otáčecí stůl: Stanice nejsou ve výchozí pozici.</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Drehtisch: Stations sind nicht in Basic Position.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Turn table: Stations are not in basic position.</seg>
+      </tuv>
+    </tu>
+    <tu tuid="AxisPrepare">
+      <tuv xml:lang="cs">
+        <seg>Otáčecí stůl: Chyba přípravy osy stolu.</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Drehtisch: Vorbereitung Fehler Achse Drehtisch.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Turn table: Turn table axis prepare error.</seg>
+      </tuv>
+    </tu>
+    <tu tuid="AxisMove">
+      <tuv xml:lang="cs">
+        <seg>Otáčecí stůl: Chyba pohybu osy stolu.</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Drehtisch: Bewegung Fehler Achse Drehtisch.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Turn table: Turn table axis move error.</seg>
+      </tuv>
+    </tu>
+    <tu tuid="MpAxisAlarmPreface">
+      <tuv xml:lang="cs">
+        <seg>Otáčecí stůl MpAxis: </seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Drehtish MpAxis:</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Turn table MpAxis: </seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>
