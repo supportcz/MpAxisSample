@@ -12,11 +12,31 @@ END_PROGRAM
 
 PROGRAM _CYCLIC
 	
-	interface.MpAxisBasic_0.Power := interface.powerOn;
-		 
+	interface.MpAxisBasic_0.Power := interface.power AND interface.MpAxisBasic_0.Info.ReadyToPowerOn;
+	
+	interface.MpAxisBasic_0.ErrorReset := interface.errorReset;
+	interface.errorReset := FALSE;
+	
+	interface.MpAxisBasic_0.Update := interface.update;
+	interface.update := FALSE;
+	
+	IF interface.MpAxisBasic_0.Info.PLCopenState = mpAXIS_ERRORSTOP OR interface.MpAxisBasic_0.Info.PLCopenState = mpAXIS_STOPPING THEN
+		interface.MpAxisBasic_0.MoveVelocity := FALSE;
+		interface.MpAxisBasic_0.MoveAbsolute := FALSE;
+		interface.MpAxisBasic_0.MoveAdditive := FALSE;
+		interface.MpAxisBasic_0.JogPositive := FALSE;
+		interface.MpAxisBasic_0.JogNegative := FALSE;
+	END_IF
+		
 	interface.MpAxisBasic_0();
 	
+	IF interface.MpAxisBasic_0.InPosition THEN
+		interface.MpAxisBasic_0.MoveAbsolute := FALSE;
+		interface.MpAxisBasic_0.MoveAdditive := FALSE;
+	END_IF
 	
+	interface.MpAxisBasic_0.Stop := FALSE;
+
 END_PROGRAM
 
 PROGRAM _EXIT
