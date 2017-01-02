@@ -1,3 +1,5 @@
 VAR
 	axis01 : REFERENCE TO MpAxisInterfaceType;
+	go : BOOL;
+	step : INT;
 END_VAR

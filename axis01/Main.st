@@ -10,6 +10,7 @@ PROGRAM _INIT
 	 
 END_PROGRAM
 
+
 PROGRAM _CYCLIC
 	
 	interface.MpAxisBasic_0.Power := interface.power AND interface.MpAxisBasic_0.Info.ReadyToPowerOn;
@@ -21,6 +22,7 @@ PROGRAM _CYCLIC
 		interface.MpAxisBasic_0.MoveAdditive := FALSE;
 		interface.MpAxisBasic_0.JogPositive := FALSE;
 		interface.MpAxisBasic_0.JogNegative := FALSE;
+		interface.MpAxisBasic_0.Autotune := FALSE;
 	END_IF
 		
 	interface.MpAxisBasic_0();
@@ -36,12 +38,18 @@ PROGRAM _CYCLIC
 		interface.MpAxisBasic_0.MoveAdditive := FALSE;
 	END_IF
 	
+	IF interface.MpAxisBasic_0.TuningDone THEN
+		interface.MpAxisBasic_0.Autotune := FALSE;
+	END_IF
+	
 	interface.MpAxisBasic_0.Stop := FALSE;
 
 END_PROGRAM
 
+
 PROGRAM _EXIT
-	interface.MpAxisBasic_0(Enable := FALSE);
-	 
+	
+	interface.MpAxisBasic_0(Enable := FALSE);	 
+	
 END_PROGRAM
 
