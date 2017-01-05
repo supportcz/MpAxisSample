@@ -7,5 +7,6 @@
     <Object Type="Program" Language="IEC" Description="sample task on MpAxis">axis01</Object>
     <Object Type="Program" Language="IEC" Description="sample task on MpAxis">axis02</Object>
     <Object Type="Program" Language="IEC">usage</Object>
+    <Object Type="File">readme.txt</Object>
   </Objects>
 </Package>
