@@ -5,6 +5,7 @@
     <Object Type="File">MpAxisSample.typ</Object>
     <Object Type="File">MpAxisSample.var</Object>
     <Object Type="Program" Language="IEC" Description="sample task on MpAxis">axis01</Object>
+    <Object Type="Program" Language="IEC" Description="sample task on MpAxis">axis02</Object>
     <Object Type="Program" Language="IEC">usage</Object>
   </Objects>
 </Package>

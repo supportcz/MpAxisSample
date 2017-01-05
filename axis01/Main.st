@@ -1,18 +1,8 @@
 
-PROGRAM _INIT
-	
-	interface.MpAxisBasic_0.MpLink := ADR(gAxisBasic);
+PROGRAM _CYCLIC
+
 	interface.MpAxisBasic_0.Enable := TRUE;
 	interface.MpAxisBasic_0.Parameters := ADR(interface.parameters);
-	interface.MpAxisBasic_0.Axis := ADR(gAxis01);
-	
-	adrAxis01 := ADR(interface);
-	 
-END_PROGRAM
-
-
-PROGRAM _CYCLIC
-	
 	interface.MpAxisBasic_0.Power := interface.power AND interface.MpAxisBasic_0.Info.ReadyToPowerOn;
 	
 	IF interface.MpAxisBasic_0.Info.PLCopenState = mpAXIS_ERRORSTOP OR interface.MpAxisBasic_0.Info.PLCopenState = mpAXIS_STOPPING THEN

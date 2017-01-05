@@ -1,3 +1,4 @@
 VAR
 	adrAxis01 : UDINT;
+	adrAxis02 : UDINT;
 END_VAR
